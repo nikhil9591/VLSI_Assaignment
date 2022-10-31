@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //define a basic gates
-module basic_gates(y1,y2,y3,y4,y5,y6,a,b);
+module basic_gates(y_not, y_and, y_or, y_xor, y_nor, y_nand, a, b);  
     
     //I/O port declarations
-    output y1,y2,y3,y4,y5,y6;
-    input a,b;
+    output y_not, y_and, y_or, y_xor, y_nor, y_nand;
+    input a, b;
     
     //instantiate logic gate primitives
     not(y1,a);
@@ -34,4 +34,4 @@ module basic_gates(y1,y2,y3,y4,y5,y6,a,b);
     nor(y5,a,b);
     nand(y6,a,b);
  
-endmodule
+endmodule    // denoting end of code
