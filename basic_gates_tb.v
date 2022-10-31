@@ -21,10 +21,10 @@
 
 //declaring test bench
 module basic_gates_tb();
-reg a,b;   // inputs
-wire y1,y2,y3,y4,y5,y6; //outputs
+reg a, b;   // inputs
+wire y_not, y_and, y_or, y_xor, y_nor, y_nand; //outputs
 
-basic_gates bg(y1,y2,y3,y4,y5,y6,a,b); //basic_gates instatiation
+basic_gates bg(y_not,y_and,y_or,y_xor,y_nor,y_nand,a,b); //basic_gates instatiation
 initial
 begin
 a=1'b0;b=1'b0;       // a=0, b=0
